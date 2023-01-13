@@ -1,18 +1,18 @@
-{{- if .Values.metric-server.enable }}
+{{- if .Values.metrics-server.enable }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: metric-server
+  name: metrics-server
   namespace: argocd
   # finalizers:
   # - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: kube-system
+    namespace: default
     server: {{ .Values.cluster }}
   project: {{ .Values.project }}
   source:
-    chart: metric-server
+    chart: metrics-server
     helm:
       # valueFiles:
       # - values.yaml
@@ -22,5 +22,4 @@ spec:
   syncPolicy:
     automated:
       prune: true
-
 {{- end }}

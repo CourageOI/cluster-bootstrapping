@@ -1,0 +1,5 @@
+cluster: https://kubernetes.default.svc
+project: default
+
+metric-server:
+  enable: true

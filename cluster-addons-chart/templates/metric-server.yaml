@@ -1,0 +1,26 @@
+{{- if .Values.metric-server.enable }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: metric-server
+  namespace: argocd
+  # finalizers:
+  # - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: kube-system
+    server: {{ .Values.cluster }}
+  project: {{ .Values.project }}
+  source:
+    chart: metric-server
+    helm:
+      # valueFiles:
+      # - values.yaml
+    chart: metrics-server
+    repoURL: https://kubernetes-sigs.github.io/metrics-server/
+    targetRevision: 3.8.2
+  syncPolicy:
+    automated:
+      prune: true
+
+{{- end }}

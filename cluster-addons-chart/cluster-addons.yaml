@@ -6,8 +6,8 @@ metadata:
 spec:
   destination:
     namespace: argocd
-    server: {{ .Values.cluster }}
-  project: {{ .Values.project }}
+    server: https://kubernetes.default.svc
+  project: project
   source:
     path: cluster-addons-chart
     repoURL: https://github.com/CourageOI/example

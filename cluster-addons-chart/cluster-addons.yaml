@@ -9,8 +9,8 @@ spec:
     server: {{ .Values.cluster }}
   project: {{ .Values.project }}
   source:
-    path: eks-cluster-addons-chart
-    repoURL: https://github.com/hivenetes/k8s-bootstrapper
+    path: cluster-addons-chart
+    repoURL: https://github.com/CourageOI/example
     targetRevision: HEAD
   syncPolicy:
     automated:

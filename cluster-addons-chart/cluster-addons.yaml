@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-addons
+  name: cluster-addon
   namespace: argocd
 spec:
   destination:
     namespace: argocd
-    server: https://kubernetes.default.svc
-  project: project
+    server: {{ .Values.cluster }}
+  project: {{ .Values.project }}
   source:
     path: cluster-addons-chart
     repoURL: https://github.com/CourageOI/example

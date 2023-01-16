@@ -10,7 +10,7 @@ spec:
   project: {{ .Values.project }}
   source:
     path: cluster-addons-chart
-    repoURL: https://github.com/CourageOI/example
+    repoURL: https://github.com/CourageOI/example.git
     targetRevision: HEAD
   syncPolicy:
     automated:

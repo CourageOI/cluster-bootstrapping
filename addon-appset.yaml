@@ -13,7 +13,7 @@ spec:
           - git:
               repoURL: https://github.com/CourageOI/example.git
               revision: master
-              file:
+              files:
                 - path: "cluster-addons-chart/infra-addons/"
           # cluster generator, 'child' #2
           - clusters:
@@ -22,11 +22,11 @@ spec:
                   argocd.argoproj.io/secret-type: cluster
   template:
     metadata:
-      name: '{{name}}'
+      name: '{{component}}'
     spec:
       project: '{{project}}'
       source:
-        chart: '{{name}}'
+        chart: '{{component}}'
         repoURL: '{{repoURL}}'
         targetRevision: '{{version}}'
         helm:

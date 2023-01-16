@@ -24,7 +24,6 @@ spec:
     metadata:
       name: '{{path.basename}}-{{name}}'
     spec:
-      namespace: argocd
       project: '{{metadata.labels.environment}}'
       source:
         repoURL: https://github.com/CourageOI/example.git

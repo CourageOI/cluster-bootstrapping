@@ -28,7 +28,7 @@ spec:
       project: '{{metadata.labels.environment}}'
       source:
         repoURL: https://github.com/CourageOI/example.git
-        targetRevision: HEAD
+        targetRevision: courage2
         path: '{{path}}'
       destination:
         server: '{{server}}'

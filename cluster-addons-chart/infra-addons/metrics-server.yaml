@@ -1,11 +1,7 @@
 name: metrics-server
-project: addons
-repoURL: cas_helm_chart_repo_url
+project: default
+repoURL: https://kubernetes-sigs.github.io/metrics-server/
+version: 3.8.2
 namespace: kube-system
 values: |-
-  service:
-    annotations: eks.amazonaws.com/role-arn=arn:aws:iam::ACCOUNT_ID:role/AmazonEKSClusterAutoscalerRole
-  skipNodes:
-    withSystemPods: false
-  extraArgs:
-  - balance-similar-node-groups
+  

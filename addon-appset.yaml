@@ -26,9 +26,9 @@ spec:
     spec:
       project: '{{project}}'
       source:
-        chart: metrics-server
-        repoURL: '{{project}}'
-        targetRevision: HEAD
+        chart: {{name}}
+        repoURL: '{{repoURL}}'
+        targetRevision: {{version}}
         helm:
           values: |-
             {{values}}

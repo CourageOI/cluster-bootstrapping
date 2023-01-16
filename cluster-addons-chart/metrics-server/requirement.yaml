@@ -1,0 +1,5 @@
+dependencies:
+- name: metrics-server
+  version: 3.82
+  repository:  https://kubernetes-sigs.github.io/metrics-server/
+  namespace: kube-system

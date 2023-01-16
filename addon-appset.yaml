@@ -26,9 +26,9 @@ spec:
     spec:
       project: '{{project}}'
       source:
-        chart: {{name}}
+        chart: '{{name}}'
         repoURL: '{{repoURL}}'
-        targetRevision: {{version}}
+        targetRevision: '{{version}}'
         helm:
           values: |-
             {{values}}

@@ -12,9 +12,9 @@ spec:
           # git generator, 'child' #1
           - git:
               repoURL: https://github.com/CourageOI/example.git
-              revision: HEAD
-              directories:
-                - path: cluster-addons-chart/infra-addons/*
+              revision: master
+              file:
+                - path: "cluster-addons-chart/infra-addons/"
           # cluster generator, 'child' #2
           - clusters:
               selector:

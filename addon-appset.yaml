@@ -12,7 +12,7 @@ spec:
           # git generator, 'child' #1
           - git:
               repoURL: https://github.com/CourageOI/example.git
-              revision: main
+              revision: courage2
               directories:
                 - path: cluster-addons-chart/*
           # cluster generator, 'child' #2
@@ -33,7 +33,7 @@ spec:
       destination:
         server: '{{server}}'
         namespace: '{{path.basename}}'
-        
+
       syncPolicy:
         automated: # automated sync by default retries failed attempts 5 times with following delays between attempts ( 5s, 10s, 20s, 40s, 80s ); retry controlled using `retry` field.
           prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).

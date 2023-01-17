@@ -1,7 +1,7 @@
 component: cluster-autoscaler
 project: default
 repoURL: https://kubernetes.github.io/autoscaler
-version: 1.23.0
+version: 9.9.2
 namespace: kube-system
 values: |-
   service:

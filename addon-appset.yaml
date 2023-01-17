@@ -14,7 +14,8 @@ spec:
               repoURL: https://github.com/CourageOI/example.git
               revision: master
               files:
-                - path: "cluster-addons-chart/infra-addon/"
+                - path: "cluster-addons-chart/infra-addons/"
+          # cluster generator, 'child' #2
           - clusters:
               selector:
                 matchLabels:

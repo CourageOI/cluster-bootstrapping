@@ -1,6 +1,6 @@
-name: cas
+component: cluster-autoscaler
 project: default
-repoURL: cas_helm_chart_repo_url
+repoURL: https://kubernetes.github.io/autoscaler
 version: 1.23.0
 namespace: kube-system
 values: |-

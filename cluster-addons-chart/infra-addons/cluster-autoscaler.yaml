@@ -6,5 +6,7 @@ namespace: kube-system
 values: |-
   service:
     annotations: "eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole"
-  skipNodes:
-    withSystemPods: false
+  extraArgs:
+    skip-nodes-with-local-storage: false
+    balance-similar-node-groups: true
+    stderrthreshold: info

@@ -8,5 +8,3 @@ values: |-
     annotations: eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole
   skipNodes:
     withSystemPods: false
-  extraArgs:
-  - balance-similar-node-groups

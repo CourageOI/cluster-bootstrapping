@@ -5,6 +5,6 @@ version: 9.9.2
 namespace: kube-system
 values: |-
   service:
-    annotations: eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole
+    annotations: "eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole"
   skipNodes:
     withSystemPods: false

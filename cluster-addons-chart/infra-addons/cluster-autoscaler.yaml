@@ -6,7 +6,8 @@ namespace: kube-system
 values: |-
   rbac:
     serviceAccount:
-      annotations: "eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole"
+      annotations: 
+          eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole
   extraArgs:
     skip-nodes-with-local-storage: false
     balance-similar-node-groups: true

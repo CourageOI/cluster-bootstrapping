@@ -1,5 +1,5 @@
 component: metrics-server
-project: default
+project: addons
 repoURL: https://kubernetes-sigs.github.io/metrics-server/
 version: 3.8.2
 namespace: kube-system

@@ -1,0 +1,12 @@
+name: cas
+project: default
+repoURL: cas_helm_chart_repo_url
+version: 1.23.0
+namespace: kube-system
+values: |-
+  service:
+    annotations: eks.amazonaws.com/role-arn=arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole
+  skipNodes:
+    withSystemPods: false
+  extraArgs:
+  - balance-similar-node-groups

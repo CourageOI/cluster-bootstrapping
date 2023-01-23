@@ -1,6 +1,6 @@
-component: cluster-autoscaler
+component: external-secrets
 project: default
-repoURL: https://kubernetes.github.io/autoscaler
+repoURL: https://github.com/external-secrets/external-secrets
 version: 0.7.2
 namespace: external-secrets
 values: |-

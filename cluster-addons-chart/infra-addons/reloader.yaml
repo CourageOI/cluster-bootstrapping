@@ -1,6 +1,6 @@
 component: reloader
 project: default
-repoURL: https://github.com/stakater/Reloader
+repoURL: https://github.com/stakater/reloader
 version: 1.0.2
 namespace: default
 values: |-

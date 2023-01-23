@@ -4,5 +4,3 @@ repoURL: https://kubernetes.github.io/dashboard
 version: 5.11.0
 namespace: kubernetes-dashboard
 values: |-
-  metrics-server:
-    enabled: true

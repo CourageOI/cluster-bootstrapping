@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: infra-addons
+  name: infra-addons-appset
   namespace: argocd
 spec:
   generators:

@@ -7,7 +7,7 @@ values: |-
   rbac:
     serviceAccount:
       annotations: 
-          eks.amazonaws.com/role-arn: arn:aws:iam::326355388919:role/AmazonEKSClusterAutoscalerRole
+          eks.amazonaws.com/role-arn: arn:aws:iam::$account-id:role/AmazonEKSClusterAutoscalerRole
   extraArgs:
     skip-nodes-with-local-storage: false
     balance-similar-node-groups: true

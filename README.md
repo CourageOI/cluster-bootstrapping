@@ -1,5 +1,3 @@
-Sure, I can give you an example ReadMe file based on the contents of the repository you linked to. Here is a possible structure for the file:
-
 
 # Cluster Bootstrapping
 
@@ -19,15 +17,10 @@ To use the code in this repository, you will need to have a working knowledge of
 
 ## Contributors
 
-This repository is maintained by the following contributors:
+The following contributors maintain this repository:
 
 * CourageOI
 
 ## License
 
 This repository is licensed under the MIT License.
-
-
-This is just a sample ReadMe file, and you may need to modify it to fit your specific needs. However, it should give you a good starting point for creating your own ReadMe file.
-
-I hope this helps!
